@@ -1,0 +1,557 @@
+/* Css Reset  */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Navbar Section Css  */
+
+:root {
+  --navbar-height: 81px;
+}
+
+#navbar-section {
+  height: 81px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#navbar-section::before {
+  content: "";
+  background-color: rgb(250, 240, 240);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/* Logo Design  */
+
+#logo img {
+  margin: 0px 7px;
+  height: 104px;
+  width: 112px;
+  padding: 5px 33px;
+}
+
+/* Navbar Links Css  */
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin: 0px 29px;
+  padding: 0px 29px;
+  font-family: "Baloo Bhai", "cursive";
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar li a {
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  color: black;
+  padding: 3px 25px;
+}
+
+.navbar li a:hover {
+  background-color: rgb(117, 211, 117);
+  color: black;
+}
+
+/* Email button Design  */
+
+.email {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn {
+  background-color: rgb(105, 182, 121);
+  font-family: "Baloo Bhai", "cursive";
+  font-size: 1.1rem;
+  color: black;
+  border: none;
+  padding: 3px 17px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #00b368;
+}
+
+/* End Navbar Section Css  */
+
+/* Home Section Css  */
+
+#home-section {
+  height: 400px;
+  display: flex;
+  position: relative;
+  /* border: 2px solid black; */
+}
+
+#home-section::before {
+  content: "";
+  background-color: rgb(199, 196, 196);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col {
+  flex: 1;
+  padding: 20px;
+}
+
+
+.col p{
+    font-size: 1.0rem;
+    font-family: "Bree Serif";
+  }
+
+
+.left {
+  text-align: left;
+  font-family: "Quicksand", "sans-serif";
+}
+
+.right {
+  text-align: right;
+}
+
+.right img {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); /* Adds a shadow to the image */
+}
+
+/* Technology Section Css  */
+
+.tech-section {
+  /* background-color: rgb(229, 231, 235); */
+  display: flex;
+  margin: 1px auto;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 8px 23px;
+}
+
+.card h1 {
+  color: #079b5d;
+}
+
+.card p {
+  font-size: 1.2rem;
+  font-family: "Bree Serif";
+  padding: 0px 5px;
+}
+
+/* Brands Section Css  */
+
+#brands-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#brands-section::before {
+  content: "";
+  background-color: rgb(199, 196, 196);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#brand-box {
+  margin: 20px;
+  padding: 2px 57px;
+  display: flex;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+#brand-box .box {
+  height: 400px;
+  width: 330px;
+  border: 2px solid rgb(209, 200, 200);
+  padding: 25px;
+  margin: 3px 8px;
+  border-radius: 10px;
+  transition: all 1s ease;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+#brand-box .box:hover {
+  transform: scale(1.05);
+}
+
+/* Brands Section : Image  */
+
+#brand-box .box img {
+  width: 86px;
+  height: 86px;
+}
+
+#brand-box .secondary-class {
+  padding: 10px;
+  margin: 5px;
+}
+
+/* Brands Section : list Design  */
+
+#brand-box .brands {
+  font-family: "Quicksand", "sans-serif";
+}
+
+#brand-box .brands li {
+  padding: 7px;
+  margin: 2px;
+}
+
+/* Service-Section Css  */
+
+.service-section {
+  display: flex;
+  margin-bottom: 21px;
+}
+
+.services {
+  /* margin: 20px; */
+  margin-left: 37px;
+  margin-right: 37px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-box {
+  display: flex;
+  align-items: last baseline;
+  position: relative;
+}
+
+/* .services .service-box h1{
+    color: white;
+} */
+
+
+.services .service-box {
+  margin: 10px 4px;
+  padding: 3px 11px;
+  height: 300px;
+  width: 391px;
+  /* border: 2px solid brown; */
+  /* background-color:rgba(0, 0, 0, 0.3) ; */
+  border-radius: 16px;
+  transition: transform 0.3s ease-in-out;
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); */
+  /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.services .service-box:hover {
+  transform: scale(0.9);
+}
+
+#back-img1::before {
+  content: "";
+  background: url("../assets/furniture.jpeg") no-repeat center center/cover;
+  position: absolute;
+  width: 95%;
+  height: 99%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#back-img2::before {
+  content: "";
+  background: url("../assets/maintainence.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 95%;
+  height: 99%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#back-img3::before {
+  content: "";
+  background: url("../assets/home-app.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 95%;
+  height: 99%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#back-img4::before {
+  content: "";
+  background: url("../assets/Modular\ Kitchen\ &\ Wardrobe.jpg") no-repeat
+    center center/cover;
+  position: absolute;
+  width: 95%;
+  height: 99%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#back-img5::before {
+  content: "";
+  background: url("../assets/smart-home.jpg") no-repeat center center/cover;
+  position: absolute;
+  width: 95%;
+  height: 99%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#back-img6::before {
+  content: "";
+  background: url("../assets/smart-home-3317436_1280.jpg") no-repeat center
+    center/cover;
+  position: absolute;
+  width: 95%;
+  height: 99%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: -1;
+  opacity: 0.8;
+}
+
+
+/* Client Section Css  */
+
+.client-section{
+    position: relative;
+}
+
+
+.client-section::before {
+    content: "";
+    background-color: rgb(199, 196, 196);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+
+.clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.client-box{
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    font-family: "Bree Serif";
+    /* font-family: "Quicksand", "sans-serif"; */
+    font-weight: 700;
+    background-color: white;
+    color: black;
+
+}
+
+
+.clients .client-box{
+    border: 2px solid rgb(209, 200, 200);
+    border-radius: 10px;
+    padding: 25px;;
+    padding: 5px 20px;
+    margin: 16px 10px;
+    width: 326px;
+    height: 60px;
+    transition: all 1s ease;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+/* .clients .client-box h4{
+    background-color: green;
+} */
+
+
+/* Slider Section For Clients  */
+
+#slider-section {
+    width: 100%;
+    padding: 40px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.client-slider {
+    overflow: hidden;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.row-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+}
+
+/* Hide scrollbar */
+.row-container::-webkit-scrollbar {
+    display: none;
+}
+
+.row-container div {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.row-container div:hover {
+    transform: scale(1.1);
+}
+
+.row-container img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+
+/* Contact Section Css  */
+
+
+#contact-section{
+    position: relative;
+    height: 500px;
+  }
+  
+  #contact-section::before{
+    
+    content: '';
+    background: url('../assets/contact-us.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 1.4;
+  }
+
+
+  .contact h1{
+    color: white;
+  }
+
+.contact #contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    
+    }
+    
+    
+    #contact-box input, #contact-box textarea{
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 10px;
+      
+    }
+    
+    #contact-box form{
+    width: 50%;
+    
+    }
+    
+    
+    #contact-box label{
+      font-size: 1.3rem;
+      font-family: 'Bree Serif';
+    }
+
+
+
+/* Footer Section : styling */
+
+footer{
+    background-color: #079b5d;
+    color: black;
+    padding: 5px 20px;
+    font-size: 1.1rem;
+    font-family: 'Bree Serif';
+  }
+
+
+  
+
+/* Utility Classes  */
+
+center {
+  text-align: center;
+}
+
+.h-primary {
+  font-size: 2.2rem;
+  font-family: "Bree Serif";
+  padding: 10px;
+}
+
+.h-secondary {
+  font-size: 1.7rem;
+  font-family: "Bree Serif";
+  padding: 12px;
+}
+
+/* End Utility Classes  */
